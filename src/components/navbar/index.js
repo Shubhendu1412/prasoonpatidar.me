@@ -12,19 +12,19 @@ function Navbar () {
             <Nav>
                 <Bars/>
                 <NavMenu>
-                    <NavLink to='/' activeStyle>
+                    <NavLink to='/' >
                         About
                     </NavLink>
-                    <NavLink to='/research' activeStyle>
+                    <NavLink to='/research' >
                         Research
                     </NavLink>
-                    <NavLink to='/projects' activeStyle>
+                    <NavLink to='/projects' >
                         Projects
                     </NavLink>
-                    <NavLink to='/teaching' activeStyle>
+                    <NavLink to='/teaching' >
                         Teaching
                     </NavLink>
-                    <NavLink to='/honors' activeStyle>
+                    <NavLink to='/honors' >
                         Honors
                     </NavLink>
                 </NavMenu>
