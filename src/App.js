@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import Navbar from "./components/navbar";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from "./pages/about/index";
 function App() {
+    const nameObject = {"name": "Prasoon Patidar", "position":"Researcher @CMU"}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header nameObject={nameObject}/>
+        <Router>
+            <Navbar/>
+            <Routes>
+                <Route path='/' exact element={<About/>}/>
+                <Route path='/research' element={<About/>}/>
+                <Route path='/projects'  element={<About/>}/>
+                <Route path='/teaching'  element={<About/>}/>
+                <Route path='/honors'  element={<About/>}/>
+            </Routes>
+        </Router>
+        <Footer name={nameObject["name"]}/>
     </div>
   );
 }
