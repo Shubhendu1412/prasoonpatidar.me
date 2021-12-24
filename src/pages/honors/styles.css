@@ -1,0 +1,39 @@
+.honor-category {
+    text-align: left;
+    min-width: fit-content;
+}
+.honor-heading {
+    display: flex;
+    margin-block: unset;
+    font-weight: 200;
+    font-size: 250%;
+    margin-top: 1.5em;
+    margin-left: 0;
+    clear: left;
+}
+
+.element {
+    margin-top: 0.5em;
+    margin-left: 0;
+    text-align: left;
+    min-width: 75%;
+
+}
+
+.line-one {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-size: 125%;
+    font-weight: 500;
+}
+.datetime {
+    float: right;
+}
+.desc {
+    margin-top: 5px;
+}
+
+
+

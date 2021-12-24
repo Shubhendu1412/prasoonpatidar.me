@@ -4,7 +4,7 @@ import './styles.css'
 const About = () => {
     return (
         <div>
-            <h1 className="heading"/>
+            {/*<h1 className="heading"/>*/}
             <img src="/profile.png" alt="portrait(Now Empty)" className="left" draggable={false}/>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -21,6 +21,7 @@ const About = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Morbi erat mi, facilisis at elit ac, mattis commodo turpis.
                 Cras vel rhoncus purus.
+                <br/>
                 Vivamus malesuada neque purus, ut ultrices ex fringilla sed.
                 Ut interdum ante lorem, id pretium elit euismod sed. Donec accumsan id urna non gravida.
                 Morbi orci leo, auctor vel semper nec, elementum a tellus.

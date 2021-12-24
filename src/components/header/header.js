@@ -1,9 +1,10 @@
+import './header.css';
 
 function Header({nameObject}){
     return (
-        <div>
-            <h2 className="name">{nameObject["name"]}</h2>
-            <h4 className="position">{nameObject["position"]}</h4>
+        <div className="header" >
+            <a className="name" href="/">{nameObject["name"]}</a><br/>
+            <a className="position" href="/research">{nameObject["position"]}</a>
         </div>
     )
 }
