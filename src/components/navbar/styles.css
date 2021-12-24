@@ -1,0 +1,13 @@
+.nav {
+    height: 85px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem calc((100vw - 1200px) / 2);
+    z-index: 12;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin-right: -24px;
+}

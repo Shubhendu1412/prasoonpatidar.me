@@ -1,17 +1,25 @@
 import React from "react";
-import {
-    Nav,
-    NavLink,
-    Bars,
-    NavMenu
-} from './NavbarElements'
+import {NavLink as Link} from "react-router-dom";
+import './styles.css'
+import styled from "styled-components";
 
+const NavLink = styled(Link)`
+  color: #808080;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  &.active {
+    color: #000000;
+  }
+`;
 function Navbar () {
     return (
         <>
-            <Nav>
-                <Bars/>
-                <NavMenu>
+            <nav className="nav">
+                <div className="nav-menu">
                     <NavLink to='/' >
                         About
                     </NavLink>
@@ -24,11 +32,17 @@ function Navbar () {
                     <NavLink to='/teaching' >
                         Teaching
                     </NavLink>
+                    <NavLink to='/leadership' >
+                        Leadership
+                    </NavLink>
                     <NavLink to='/honors' >
                         Honors
                     </NavLink>
-                </NavMenu>
-            </Nav>
+                    <NavLink to='/blog' >
+                        Blog
+                    </NavLink>
+                </div>
+            </nav>
         </>
     )
 }

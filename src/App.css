@@ -39,3 +39,15 @@
     transform: rotate(360deg);
   }
 }
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  color: blueviolet;
+  border: 2px solid blueviolet;
+  border-radius: 8px;
+  padding: 0.8em 0.9em;
+  margin: 0.8em 0.8em 0.8em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
